@@ -4,12 +4,12 @@ $(document).ready(function() {
   var current = 0
   var captionLength = 0
   var captionList = [
-    'Lead by example',
     'Continuous improvement',
     'Positivity',
     'Dedication',
     'Creativity',
-    'Teamwork'
+    'Teamwork',
+    'Lead by example'
   ]
   // var captionList = [ 'npm i -S Positivity', 'npm i -S Relentless-Drive', 'npm i -S Dedication' ];
   function startTyping() {
