@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shane</title>
+    <link rel="icon" href="assets/images/me.jpg">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+          <button class="btn" id="theme__button"><i id="border-info-none" class="fas fa-palette"></i></button>
+
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 mt-3">
+                    <img class="mx-auto d-block profile__picture" src="assets/images/me.jpg" alt="Shane Streator">
+                </div>
+                <div class="col col-12 mt-3">
+                    <h1 class="profile__name" style="font-size: 36px;">Shane Streator</h1>
+                    <p class="profile__name">Full Stack Developer</p>
+                    </br>
+                    <div class="console__wrapper">
+                        <code id="console"> <span class="text-info" id="dynamic-desc">&gt; </span> <span id="cursor" class="text-info" style="opacity: 1">|</span></code>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-info" width="80%" />
+            <div class="row">
+                <div style="text-align:center;" class="col-12 mt-3 body-dark border-info">
+                    <a class="border-info-none" class="border-info-none" href="#about" data-toggle="modal" data-target="#about"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;About
+                        me</a>
+                </div>
+                <div style="text-align:center;" class="col-12 mt-3 border-info">
+                    <a class="border-info-none" href="#experience" data-toggle="modal" data-target="#experience"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Experience</a>
+                </div>
+                <div style="text-align:center;" class="col-12 mt-3 border-info">
+                    <a class="border-info-none" href="#projects" data-toggle="modal" data-target="#projects"><i class="fas fa-project-diagram"></i>&nbsp;&nbsp;Projects</a>
+                </div>
+                <div style="text-align:center;" class="col-12 mt-3 border-info">
+                    <a class="border-info-none" href="#skills" data-toggle="modal" data-target="#skills"><i class="fas fa-glasses"></i>&nbsp;&nbsp;Skills</a>
+                </div>
+                <hr class="bg-info" width="20%" />
+                <div style="text-align:center;" class="col-12 mt-3 border-info">
+                    <a class="border-info-none" href="assets/DillonsResume.pdf" target="_blank"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;CV</a>
+                </div>
+            </div>
+
+            <!-- MODALS : START -->
+            <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="aboutLabel" aria-hidden="true">
+                <div class="modal-dialog modal-full" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="aboutLabel">About me</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body pb-0">
+                            <p class="pt-4 lead">
+                                Detail-oriented and motivated developer seeking opportunities.
+                                <br />
+                                <br />
+                                Passionate Full Stack Developer that possess a mindset for high drive, continuous improvement, and dedication to quality work.
+                            </p>
+
+                              <h6 class="pt-4 pb-3 mb-0">Principles I believe in, promote and adhere to:
+                                </h6>
+                                <ul class="text-left">
+                                  <li class="font-italic py-2">"No one rises to low expectations."</li>
+                                  <li class="font-italic py-2">"Know your limits, but never accept them."</li>
+                                  <li class="font-italic py-2">"In the middle of difficulty lies opportunity."</li>
+                                  <li class="font-italic py-2">"Those who say it can`t be done shouldn't interrupt those doing it."</li>
+                                  <li class="font-italic py-2">"Those who say it can`t be done shouldn't interrupt those doing it."</li>
+                                  <li class="font-italic py-2">"
+                                    You attract people by the qualities you display, you keep them by the qualities you possess."</li>
+
+                                </ul>
+
+                        </div>
+                        <div id="modal-footer-bordertop-none" class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="experience" tabindex="-1" role="dialog" aria-labelledby="experienceLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-full" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="experienceLabel">Experience</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card">
+                                <div class="card-header" data-toggle="collapse" data-target="#experienceCompozedLabs_FSD"
+                                    aria-expanded="false" aria-controls="experienceCompozedLabs_FSD">
+                                    <p class="experience__company">Fullstack Academy <span class="experience__date">1/19 -
+                                            present</span></p>
+                                    <p class="experience__title">Full Stack Developer</p>
+                                </div>
+                                <div class="collapse" id="experienceCompozedLabs_FSD">
+                                    <div class="card-body">
+                                        <p>
+                                            <span style="font-style: italic">
+                                                Working in the Enterprise Automation and Security team within
+                                                Allstate's CompoZed Lab's.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Delivering software solutions for in house clients of vested interest.
+                                            Solutions include metric tracking and audit tracking/record keeping
+                                            automation.
+                                        </p>
+                                        <p>
+                                            <strong>Backend</strong>: Java, Spring Boot, JPA
+                                            <br />
+                                            <strong>Frontend</strong>: React, Redux, React-Router
+                                            <br />
+                                            <strong>Workflow</strong>: Pivotal suite, MS 365 suite, Jenkins, Kibana,
+                                            TDD, Pair Programming
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-footer-bordertop-none" class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="projects" tabindex="-1" role="dialog" aria-labelledby="projectsLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-full" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectsLabel">Projects</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h1>Project 1...</h1>
+                            <h1>Project 1...</h1>
+                            <h1>Project 1...</h1>
+                            <h1>Project 1...</h1>
+                            <h1>Project 1...</h1>
+                            <h1>Project 1...</h1>
+                            <h1>Project 1...</h1>
+                            <h1>Project 1...</h1>
+                            <h1>Project 1...</h1>
+                            <h1>Project 1...</h1>
+                        </div>
+                        <div id="modal-footer-bordertop-none" class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="skills" tabindex="-1" role="dialog" aria-labelledby="skillsLabel" aria-hidden="true">
+                <div class="modal-dialog modal-full" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="skillsLabel">Skills</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td  width="100px"><b>Core Programming</b></td>
+                                        <td class="p-3">ES6 | JavaScript | HTML | CSS | Node | RESTful APIs | TDD | JWT</td>
+                                    </tr>
+                                    <tr>
+                                        <td  width="100px"><b>Frameworks/Libraries</b></td>
+                                        <td class="p-3">React | Redux | Express | Bootstrap | jQuery | Socket.io | Passport.js</td>
+                                    </tr>
+                                    <tr>
+                                        <td  width="100px"><b>Testing</b></td>
+                                        <td class="p-3">Jasmine | Mocha </td>
+                                    </tr>
+                                    <tr>
+                                        <td  width="100px"><b>Databases</b></td>
+                                        <td class="p-3">MongoDB | PostgreSQL</td>
+                                    </tr>
+                                    <tr>
+                                        <td  width="100px"><b>ORM &amp; ODM</b></td>
+                                        <td class="p-3">Mongoose | Sequelize </td>
+                                    </tr>
+                                    <tr>
+                                        <td  width="100px"><b>Integrations</b></td>
+                                        <td class="p-3">Stripe | ADSense | GoogleMaps | Mapbox | Pollfish | Twitter | Facebook</td>
+                                    </tr>
+                                    <tr>
+                                        <td  width="100px"><b>Workflow</b></td>
+                                        <td class="p-3">Git | Github | Heroku | Slack | Trello | TeamWork | VS Code LiveShare</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="modal-footer-bordertop-none" class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODALS : END -->
+
+        </div>
+
+    </main>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+
+</html>

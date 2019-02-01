@@ -1,0 +1,195 @@
+body {
+  font-family: 'Montserrat', 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+body.light {
+  background-color: #eee !important;
+  color: #333 !important;
+}
+body.dark {
+  background-color: #333 !important;
+  color: #eee;
+}
+
+#modal-footer-bordertop-none {
+  border-top: none;
+}
+
+img {
+  box-shadow: 3px 2px 3px #17a2b8;
+}
+
+body.light .modal-header,
+body.light .modal-body,
+body.light .modal-footer,
+body.light .modal-header > button > span {
+  background-color: #eee !important;
+  color: #333 !important;
+  border-color: #ddd;
+}
+body.dark .modal-header,
+.modal-body,
+.modal-footer,
+body.dark .modal-header > button > span {
+  background-color: #333 !important;
+  color: #eee;
+  border-color: #222;
+}
+
+body.dark button.btn {
+  background-color: #eee;
+  color: #333;
+}
+body.light button.btn {
+  background-color: #333;
+  color: #eee;
+}
+
+body.light .card {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333;
+  box-shadow: 0 4px 8px 0 #ddd;
+  transition: 0.3s;
+}
+body.light .card:hover {
+  box-shadow: 0 4px 16px 0 #444;
+}
+body.dark .card {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #eee;
+  box-shadow: 0 4px 8px 0 #444;
+  transition: 0.3s;
+}
+body.dark .card:hover {
+  box-shadow: 0 4px 16px 0 #ddd;
+}
+
+.card-header {
+  cursor: pointer;
+}
+.card-header > p {
+  margin: 0;
+}
+.card-body {
+  text-align: center;
+}
+.experience__company {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  float: left;
+}
+.experience__date {
+  font-size: 10px;
+  font-style: italic;
+  display: inline-block;
+  font-weight: initial;
+}
+.experience__title {
+  font-size: 15px;
+  display: inline-block;
+  float: right;
+}
+
+code {
+  border-radius: 5px;
+}
+body.dark code {
+  background-color: #222;
+}
+body.light code {
+  background-color: #ddd;
+}
+
+body.dark hr {
+  background-color: #eee;
+}
+body.light hr {
+  background-color: #333;
+}
+
+a {
+  text-decoration: none !important;
+  padding: 5px 50px;
+  border-radius: 25px 0px;
+  font-size: 25px;
+}
+body.dark a {
+  color: #eee;
+}
+body.dark a:hover {
+  /* opacity: 0.75; */
+  /* color: #333; */
+  /* background-color: #eee; */
+}
+
+body.light a {
+  color: #333;
+}
+body.light a:hover {
+  /* opacity: 0.75; */
+  /* color: #eee; */
+  /* background-color: #333; */
+}
+
+#theme__button {
+  font-size: 20px;
+  border-radius: 12.5%;
+  margin: 10px;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  border: 1px solid #17a2b8;
+}
+
+#theme__button :hover {
+  border: none;
+  /* box-shadow: 0 4px 8px 0 #17a2b8; */
+}
+
+.section__landing {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.border-info :hover {
+  border: 1px solid #17a2b8;
+  box-shadow: 3px 2px 3px #17a2b8;
+}
+
+.border-info-none :hover {
+  border: none;
+  box-shadow: none;
+}
+
+.profile__picture {
+  border-radius: 100%;
+  border: 1px solid #17a2b8;
+  width: 30%;
+  max-width: 207px;
+}
+
+.profile__name {
+  margin: 0;
+  text-align: center;
+}
+
+.console__wrapper {
+  text-align: center;
+}
+
+.modal-full {
+  min-width: 80%;
+  max-height: 80vh;
+  margin: 0;
+  /* overflow-y: scroll; */
+}
+.modal-full > .modal-content > .modal-body {
+  max-height: 75vh;
+  overflow-y: scroll;
+  text-align: center;
+}
