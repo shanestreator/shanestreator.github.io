@@ -1,3 +1,4 @@
+/* ------------------------- BODY ------------------------- */
 body {
   font-family: 'Montserrat', 'Ubuntu', sans-serif;
   overflow-x: hidden;
@@ -11,14 +12,120 @@ body.dark {
   color: #eee;
 }
 
-#modal-footer-bordertop-none {
-  border-top: none;
+/* ------------------------- IMAGE ------------------------- */
+body.light img {
+  border: 1px solid #333;
+  box-shadow: 3px 2px 3px #333;
+}
+body.dark img {
+  border: 1px solid #18cae6;
+  box-shadow: 3px 2px 3px #18cae6;
 }
 
-img {
-  box-shadow: 3px 2px 3px #17a2b8;
+/* ------------------------- HR (LINE) ------------------------- */
+body.light hr {
+  background: #333;
+  box-shadow: 2px 1px 2px #333;
+}
+body.dark hr {
+  background: #18cae6;
+  box-shadow: 2px 1px 2px #18cae6;
 }
 
+/* ------------------------- JS TEXT DISPLAY ------------------------- */
+code {
+  border-radius: 5px;
+  padding-bottom: 1px;
+}
+body.dark #cursor,
+body.dark #console {
+  color: #18cae6;
+}
+body.dark #dynamic-desc {
+  color: #eee;
+}
+body.light #cursor,
+body.light #console {
+  color: #eee;
+  background: #333;
+}
+body.light #dynamic-desc {
+  color: #eee;
+  background: #333;
+}
+
+/* ------------------------- THEME BUTTON ------------------------- */
+body.light #theme__button {
+  border-color: #18cae6;
+  background: #333;
+  color: #18cae6;
+  box-shadow: 2px 2px 7px #333;
+}
+body.light #theme__button:hover {
+  background: #444;
+  box-shadow: 2px 2px 2px #333;
+}
+body.light #theme__button:active {
+  border-color: #333;
+  background: #18cae6;
+  color: #333;
+  box-shadow: 2px 2px 7px #333;
+}
+/* --- DARK --- */
+body.dark #theme__button {
+  border-color: #333;
+  background: #eee;
+  color: #333;
+  box-shadow: 2px 2px 7px #eee;
+}
+body.dark #theme__button:hover {
+  background: #ddd;
+  box-shadow: 2px 2px 2px #eee;
+}
+body.dark #theme__button:active {
+  border-color: #eee;
+  background: #333;
+  color: #eee;
+  box-shadow: 2px 2px 2px #eee;
+}
+
+/* ------------------------- MENU BUTTONS ------------------------- */
+body.light .border-info :hover {
+  border: 1px solid #333;
+  box-shadow: 3px 2px 3px #333;
+}
+body.light .border-info-none :hover {
+  border: none;
+  box-shadow: none;
+}
+body.light .border-info :active {
+  border: 1px solid #333;
+  box-shadow: 1.5px 1px 1.5px #333;
+}
+body.light .border-info-none :active {
+  border: none;
+  box-shadow: none;
+}
+/* --- DARK --- */
+body.dark .border-info :hover {
+  border: 1px solid #18cae6;
+  box-shadow: 4px 4px 15px #18cae6;
+}
+body.dark .border-info-none :hover {
+  border: none;
+  box-shadow: none;
+}
+body.dark .border-info :active {
+  color: #18cae6;
+  border: 1px solid #18cae6;
+  box-shadow: 2px 2px 5px #18cae6;
+}
+body.dark .border-info-none :active {
+  border: none;
+  box-shadow: none;
+}
+
+/* ------------------------- MODALS ------------------------- */
 body.light .modal-header,
 body.light .modal-body,
 body.light .modal-footer,
@@ -27,6 +134,10 @@ body.light .modal-header > button > span {
   color: #333 !important;
   border-color: #ddd;
 }
+body.light .modal-dialog {
+  border-color: #333;
+}
+/* --- DARK --- */
 body.dark .modal-header,
 .modal-body,
 .modal-footer,
@@ -35,37 +146,37 @@ body.dark .modal-header > button > span {
   color: #eee;
   border-color: #222;
 }
+body.dark .modal-content {
+  border: 1px solid rgba(24, 202, 230, 0.7);
+  /* box-shadow: 0 4px 15px #18cae6; */
+}
 
-body.dark button.btn {
-  background-color: #eee;
-  color: #333;
-}
-body.light button.btn {
-  background-color: #333;
-  color: #eee;
-}
+/* ------------------------- ABOUT MODAL ------------------------- */
+
+/* ------------------------- EXPERIENCE MODAL ------------------------- */
 
 body.light .card {
   margin-top: 10px;
   border-radius: 5px;
   background-color: #eee;
   color: #333;
-  box-shadow: 0 4px 8px 0 #ddd;
+  box-shadow: 0 4px 8px 0 #18cae6;
   transition: 0.3s;
 }
 body.light .card:hover {
-  box-shadow: 0 4px 16px 0 #444;
+  box-shadow: 0 4px 16px 0 #18cae6;
 }
 body.dark .card {
   margin-top: 10px;
   border-radius: 5px;
+  border-color: #18cae6;
   background-color: #333;
   color: #eee;
   box-shadow: 0 4px 8px 0 #444;
   transition: 0.3s;
 }
 body.dark .card:hover {
-  box-shadow: 0 4px 16px 0 #ddd;
+  /* box-shadow: 0 4px 16px 0 #18cae6; */
 }
 
 .card-header {
@@ -95,21 +206,11 @@ body.dark .card:hover {
   float: right;
 }
 
-code {
-  border-radius: 5px;
-}
 body.dark code {
   background-color: #222;
 }
 body.light code {
   background-color: #ddd;
-}
-
-body.dark hr {
-  background-color: #eee;
-}
-body.light hr {
-  background-color: #333;
 }
 
 a {
@@ -143,12 +244,6 @@ body.light a:hover {
   position: fixed;
   z-index: 999;
   bottom: 0;
-  border: 1px solid #17a2b8;
-}
-
-#theme__button :hover {
-  border: none;
-  /* box-shadow: 0 4px 8px 0 #17a2b8; */
 }
 
 .section__landing {
@@ -156,19 +251,8 @@ body.light a:hover {
   margin: 0 auto;
 }
 
-.border-info :hover {
-  border: 1px solid #17a2b8;
-  box-shadow: 3px 2px 3px #17a2b8;
-}
-
-.border-info-none :hover {
-  border: none;
-  box-shadow: none;
-}
-
 .profile__picture {
   border-radius: 100%;
-  border: 1px solid #17a2b8;
   width: 30%;
   max-width: 207px;
 }
@@ -186,10 +270,16 @@ body.light a:hover {
   min-width: 80%;
   max-height: 80vh;
   margin: 0;
+  padding: 0;
   /* overflow-y: scroll; */
 }
 .modal-full > .modal-content > .modal-body {
   max-height: 75vh;
   overflow-y: scroll;
   text-align: center;
+  background: #333;
+}
+
+#modal-footer-bordertop-none {
+  border: none;
 }

@@ -30,11 +30,11 @@
                     <p class="profile__name">Full Stack Developer</p>
                     </br>
                     <div class="console__wrapper">
-                        <code id="console"> <span class="text-info" id="dynamic-desc">&gt; </span> <span id="cursor" class="text-info" style="opacity: 1">|</span></code>
+                        <code id="console" class="pl-2"> > <span id="dynamic-desc"></span><span id="cursor" class="mr-1" style="opacity: 1">|</span></code>
                     </div>
                 </div>
             </div>
-            <hr class="bg-info" width="80%" />
+            <hr width="80%" />
             <div class="row mb-5">
                 <div style="text-align:center;" class="col-12 mt-3 body-dark border-info">
                     <a class="border-info-none" class="border-info-none" href="#about" data-toggle="modal" data-target="#about"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;About
@@ -46,10 +46,10 @@
                 <div style="text-align:center;" class="col-12 mt-3 border-info">
                     <a class="border-info-none" href="#projects" data-toggle="modal" data-target="#projects"><i class="fas fa-project-diagram"></i>&nbsp;&nbsp;Projects</a>
                 </div>
-                <div style="text-align:center;" class="col-12 mt-3 border-info">
+                <div style="text-align:center;" class="col-12 my-3 border-info">
                     <a class="border-info-none" href="#skills" data-toggle="modal" data-target="#skills"><i class="fas fa-glasses"></i>&nbsp;&nbsp;Skills</a>
                 </div>
-                <hr class="bg-info" width="20%" />
+                <hr width="20%" />
                 <div style="text-align:center;" class="col-12 mt-3 border-info">
                     <a class="border-info-none" href="assets/ShanesResume.pdf" target="_blank"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;CV</a>
                 </div>
@@ -66,53 +66,74 @@
                             </button>
                         </div>
                         <div class="modal-body pb-0">
-                            <p class="pt-4 lead">
-                                Detail-oriented and motivated developer seeking opportunities.
+                            <p class="py-4 px-2 lead border shadow">
+                                <strong>
+                                    Detail-oriented and motivated developer seeking opportunity.
+                                </strong>
                                 <br />
                                 <br />
-                                Passionate Full Stack Developer that possess a mindset for high drive, continuous improvement, and dedication to quality work.
+                                    Passionate Full Stack Developer that possess a mindset for high drive, continuous improvement, and dedication to quality work.
                             </p>
-
-                              <h6 class="pt-4 pb-3 mb-0">Principles I believe in, promote and adhere to:
-                                </h6>
-                                <ul class="text-left">
-                                  <li class="font-italic py-2">"No one rises to low expectations."</li>
-                                  <li class="font-italic py-2">"Know your limits, but never accept them."</li>
-                                  <li class="font-italic py-2">"In the middle of difficulty lies opportunity."</li>
-                                  <li class="font-italic py-2">"Those who say it can`t be done shouldn't interrupt those doing it."</li>
-                                  <li class="font-italic py-2">"Those who say it can`t be done shouldn't interrupt those doing it."</li>
-                                  <li class="font-italic py-2">"
-                                    You attract people by the qualities you display, you keep them by the qualities you possess."</li>
-
-                                </ul>
-
+                            <div class="border shadow mb-5">
+                                <h6 class="pt-4 pb-3 mb-0">Principles I believe in, promote and adhere to:
+                                  </h6>
+                                  <ul class="text-left">
+                                    <li class="font-italic py-2">"No one rises to low expectations."</li>
+                                    <li class="font-italic py-2">"Know your limits, but never accept them."</li>
+                                    <li class="font-italic py-2">"In the middle of difficulty lies opportunity."</li>
+                                    <li class="font-italic py-2">"Those who say it can`t be done shouldn't interrupt those doing it."</li>
+                                    <li class="font-italic py-2">"Those who say it can`t be done shouldn't interrupt those doing it."</li>
+                                    <li class="font-italic py-2">"
+                                      You attract people by the qualities you display, you keep them by the qualities you possess."</li>
+                                  </ul>
+                            </div>
                         </div>
                         <div id="modal-footer-bordertop-none" class="modal-footer"></div>
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade" id="experience" tabindex="-1" role="dialog" aria-labelledby="experienceLabel"
-                aria-hidden="true">
+            <div
+                class="modal fade"
+                id="experience"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="experienceLabel"
+                aria-hidden="true"
+            >
                 <div class="modal-dialog modal-full" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="experienceLabel">Experience</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <div class="modal-header d-flex align-items-center">
+                            <div class="d-flex justify-content-center align-items-center mr-2">
+
+                                    <i class="fas fa-briefcase"></i>
+
+                            </div>
+                            <h5 class="modal-title" id="experienceLabel">
+                                Experience
+                            </h5>
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
                             <div class="card">
-                                <div class="card-header" data-toggle="collapse" data-target="#experienceCompozedLabs_FSD"
-                                    aria-expanded="false" aria-controls="experienceCompozedLabs_FSD">
-                                    <p class="experience__company">Fullstack Academy <span class="experience__date">1/19 -
-                                            present</span></p>
-                                    <p class="experience__title">Full Stack Developer</p>
+                                <div class="card-header container" data-toggle="collapse" data-target="#example"
+                                    aria-expanded="false" aria-controls="example">
+                                    <div class="row align-items-center">
+                                        <p class="col mb-0 px-0 experience__company">Example</p>
+                                        <span class="col-2 px-0 text-left experience__date">9/18 - 1/19</span>
+                                        <p class="col mb-0 px-0 experience__title">Example</p>
+                                    </div>
                                 </div>
-                                <div class="collapse" id="experienceCompozedLabs_FSD">
+                                <div class="collapse" id="example">
                                     <div class="card-body">
-                                        <p>
+                                        <p class="pt-2">
                                             <span style="font-style: italic">
                                                 Working in the Enterprise Automation and Security team within
                                                 Allstate's CompoZed Lab's.
@@ -134,6 +155,37 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="card mt-5">
+                                    <div class="card-header container" data-toggle="collapse" data-target="#fullstack"
+                                        aria-expanded="false" aria-controls="fullstack">
+                                        <div class="row align-items-center">
+                                            <p class="col mb-0 px-0 experience__company">Fullstack Academy</p>
+                                            <span class="col-2 px-0 text-left experience__date">9/18 - 1/19</span>
+                                            <p class="col mb-0 px-0 experience__title">Software Engineer Student</p>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="fullstack">
+                                        <div class="card-body">
+                                            <div class="pt-2">
+                                                <ul class="text-left">
+                                                    <li class="pb-3"><strong>Front-End:</strong> JavaScript ES6+, React, Redux, HTML5, CSS3, Bootstrap</li>
+                                                    <li class="pb-3"><strong>Back-End:</strong> Node.js, Express, PostgreSQL/Sequelize</li>
+                                                    <li class="pb-3"><strong>Workflow:</strong> TDD, Pair Programming, GitHub, Git, Slack</li>
+                                                    <li class="pb-3"><strong>Projects:</strong>
+                                                        <ul>
+                                                            <li class="py-2"><strong>StackBot Inc.</strong> | Solo Developer | November – January | https://deploylink.com</li>
+                                                            <ul>
+                                                                <li class="pb-2">A full stack app for a company staffed by robots that tracks each robot and assigned projects.</li>
+                                                                <li class="">Developed with Node.js, Express, React, Redux and PostgreSQL/Sequelize along with ES6+ (SERN stack) </li>
+                                                            </ul>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                         <div id="modal-footer-bordertop-none" class="modal-footer"></div>
                     </div>

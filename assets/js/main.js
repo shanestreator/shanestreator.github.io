@@ -18,7 +18,7 @@ $(document).ready(function() {
     type()
   }
   function type() {
-    $('#dynamic-desc').text('> ' + caption.substr(0, captionLength++))
+    $('#dynamic-desc').text(' ' + caption.substr(0, captionLength++) + ' ')
     if (captionLength < caption.length + 1) {
       return setTimeout(type, 50)
     } else {
@@ -26,7 +26,7 @@ $(document).ready(function() {
     }
   }
   function erase() {
-    $('#dynamic-desc').text('> ' + caption.substr(0, captionLength--))
+    $('#dynamic-desc').text(' ' + caption.substr(0, captionLength--) + ' ')
     if (captionLength >= 0) {
       return setTimeout(erase, 50)
     } else {
