@@ -153,6 +153,13 @@ body.dark .modal-content {
 
 /* ------------------------- ABOUT MODAL ------------------------- */
 
+body.light #card-no-curser {
+  pointer-events: none;
+}
+body.dark #card-no-curser {
+  pointer-events: none;
+}
+
 /* ------------------------- EXPERIENCE MODAL ------------------------- */
 
 body.light .card {
@@ -160,11 +167,11 @@ body.light .card {
   border-radius: 5px;
   background-color: #eee;
   color: #333;
-  box-shadow: 0 4px 8px 0 #18cae6;
+  box-shadow: 0 4px 8px 0 #333;
   transition: 0.3s;
 }
 body.light .card:hover {
-  box-shadow: 0 4px 16px 0 #18cae6;
+  box-shadow: 0 4px 16px 0 #333;
 }
 body.dark .card {
   margin-top: 10px;
