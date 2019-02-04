@@ -213,14 +213,14 @@ body.light code {
   background-color: #ddd;
 }
 
-a {
+#a-tag-menu {
   text-decoration: none !important;
   padding: 5px 50px;
   border-radius: 25px 0px;
   font-size: 25px;
 }
 body.dark a {
-  color: #eee;
+  color: #ddd;
 }
 body.dark a:hover {
   /* opacity: 0.75; */
@@ -282,4 +282,32 @@ body.light a:hover {
 
 #modal-footer-bordertop-none {
   border: none;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }

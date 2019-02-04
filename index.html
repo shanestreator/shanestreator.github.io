@@ -7,18 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shane</title>
     <link rel="icon" href="assets/images/me.jpg">
-
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- <link rel="stylesheet" href="assets/css/materialize.min.css" type="text/css" media="screen,projection" /> -->
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
+    crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/social-media.css">
+
 </head>
 
 <body>
     <main>
-          <button class="btn" id="theme__button"><i id="border-info-none" class="fas fa-palette"></i></button>
+          <div style="position:fixed;bottom:0px;left:0px;z-index:999;">
+            <div class="icon-pack2 pb-0" >
+                <ul class="pl-2 mb-2">
+                    <li><a href="https://github.com/shanestreator" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/shanestreator" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+                    <li><a id="theme__onClick" target="_blank"><i class="fas fa-palette" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <div class="container">
             <div class="row">
@@ -37,21 +58,21 @@
             <hr width="80%" />
             <div class="row mb-5">
                 <div style="text-align:center;" class="col-12 mt-3 body-dark border-info">
-                    <a class="border-info-none" class="border-info-none" href="#about" data-toggle="modal" data-target="#about"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;About
+                    <a id="a-tag-menu" class="border-info-none" class="border-info-none" href="#about" data-toggle="modal" data-target="#about"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;About
                         me</a>
                 </div>
                 <div style="text-align:center;" class="col-12 mt-3 border-info">
-                    <a class="border-info-none" href="#experience" data-toggle="modal" data-target="#experience"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Experience</a>
+                    <a id="a-tag-menu" class="border-info-none" href="#experience" data-toggle="modal" data-target="#experience"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Experience</a>
                 </div>
                 <div style="text-align:center;" class="col-12 mt-3 border-info">
-                    <a class="border-info-none" href="#projects" data-toggle="modal" data-target="#projects"><i class="fas fa-project-diagram"></i>&nbsp;&nbsp;Projects</a>
+                    <a id="a-tag-menu" class="border-info-none" href="#projects" data-toggle="modal" data-target="#projects"><i class="fas fa-project-diagram"></i>&nbsp;&nbsp;Projects</a>
                 </div>
                 <div style="text-align:center;" class="col-12 my-3 border-info">
-                    <a class="border-info-none" href="#skills" data-toggle="modal" data-target="#skills"><i class="fas fa-glasses"></i>&nbsp;&nbsp;Skills</a>
+                    <a id="a-tag-menu" class="border-info-none" href="#skills" data-toggle="modal" data-target="#skills"><i class="fas fa-glasses"></i>&nbsp;&nbsp;Skills</a>
                 </div>
                 <hr width="20%" />
                 <div style="text-align:center;" class="col-12 mt-3 border-info">
-                    <a class="border-info-none" href="assets/ShanesResume.pdf" target="_blank"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;CV</a>
+                    <a id="a-tag-menu" class="border-info-none" href="assets/ShanesResume.pdf" target="_blank"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;CV</a>
                 </div>
             </div>
 
@@ -274,13 +295,17 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
+ crossorigin="anonymous"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+ crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-<script src="assets/js/main.js"></script>
+ crossorigin="anonymous"></script>
+
+ <script src="assets/js/main.js"></script>
+ <!-- <script type="text/javascript" src="assets/js/jquery.min.js"></script> -->
+ <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+ <!-- <script src="assets/js/init.js"></script> -->
 
 </html>
