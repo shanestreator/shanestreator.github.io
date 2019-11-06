@@ -56,7 +56,7 @@ $(document).ready(function() {
   // THEME
   ;(function() {
     var theme = localStorage.getItem('theme')
-    updateTheme(theme || 'light')
+    updateTheme(theme || 'dark')
     $('#theme__onClick').on('click', function() {
       var theme = localStorage.getItem('theme')
       var newTheme = theme === 'dark' ? 'light' : 'dark'
