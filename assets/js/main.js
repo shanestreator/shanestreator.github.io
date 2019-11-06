@@ -56,11 +56,11 @@ $(document).ready(function() {
   // THEME
   ;(function() {
     var theme = localStorage.getItem('theme')
-    updateTheme(theme || 'dark')
+    updateTheme(theme || 'light')
     $('#theme__onClick').on('click', function() {
       var theme = localStorage.getItem('theme')
-      var newTheme = theme === 'light' ? 'dark' : 'light'
-      updateTheme(newTheme || 'dark')
+      var newTheme = theme === 'dark' ? 'light' : 'dark'
+      updateTheme(newTheme || 'light')
     })
     function updateTheme(theme) {
       localStorage.setItem('theme', theme)
