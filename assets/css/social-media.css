@@ -2,7 +2,7 @@
 .social_buttons_center {
   position: fixed;
   bottom: 0px;
-  left: calc(50% - 94.55px);
+  left: calc(50% - 164.55px);
   z-index: 999;
 }
 
@@ -21,7 +21,9 @@
 
 .icon-pack2 ul li {
   list-style-type: none;
-  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 15px;
   display: table-cell;
   transform: scale(0.8);
   -webkit-transform: scale(0.8);
