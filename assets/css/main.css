@@ -1,81 +1,88 @@
 /* ------------------------- BODY ------------------------- */
+* {
+  font-family: 'Montserrat';
+}
 body {
-  font-family: 'Montserrat', 'Ubuntu', sans-serif;
   overflow-x: hidden;
 }
 body.light {
   background-color: #eee !important;
-  color: #333 !important;
+  color: #222 !important;
 }
 body.dark {
-  background-color: #333 !important;
+  background-color: #222 !important;
   color: #eee;
 }
 
 /* ------------------------- IMAGE ------------------------- */
 body.light img {
-  border: 1px solid #333;
-  box-shadow: 3px 2px 3px #333;
+  border: 1px solid #222;
+  box-shadow: 3px 2px 3px #222;
 }
 body.dark img {
-  border: 1px solid #18cae6;
-  box-shadow: 3px 2px 3px #18cae6;
+  border: 1px solid #33FF33;
+  box-shadow: 3px 2px 3px #33FF33;
 }
 
 /* ------------------------- HR (LINE) ------------------------- */
 body.light hr {
-  background: #333;
-  box-shadow: 2px 1px 2px #333;
+  background: #222;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 body.dark hr {
-  background: #18cae6;
-  box-shadow: 2px 1px 2px #18cae6;
+  background: #33FF33;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* ------------------------- JS TEXT DISPLAY ------------------------- */
 code {
-  border-radius: 5px;
+  border-radius: 2.5px;
   padding-bottom: 1px;
 }
 body.dark #cursor,
 body.dark #console {
-  color: #18cae6;
+  color: #33FF33;
 }
 body.dark #dynamic-desc {
-  color: #eee;
+  color: #c4c4c4;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 body.light #cursor,
 body.light #console {
   color: #eee;
-  background: #333;
+  background: #222;
 }
 body.light #dynamic-desc {
   color: #eee;
-  background: #333;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
 /* ------------------------- THEME BUTTON ------------------------- */
 body.light #theme__button {
-  border-color: #18cae6;
-  background: #333;
-  color: #18cae6;
-  box-shadow: 2px 2px 7px #333;
+  border-color: #33FF33;
+  background: #222;
+  color: #33FF33;
+  box-shadow: 2px 2px 7px #222;
 }
 body.light #theme__button:hover {
   background: #444;
-  box-shadow: 2px 2px 2px #333;
+  box-shadow: 2px 2px 2px #222;
 }
 body.light #theme__button:active {
-  border-color: #333;
-  background: #18cae6;
-  color: #333;
-  box-shadow: 2px 2px 7px #333;
+  border-color: #222;
+  background: #33FF33;
+  color: #222;
+  box-shadow: 2px 2px 7px #222;
 }
 /* --- DARK --- */
 body.dark #theme__button {
-  border-color: #333;
+  border-color: #222;
   background: #eee;
-  color: #333;
+  color: #222;
   box-shadow: 2px 2px 7px #eee;
 }
 body.dark #theme__button:hover {
@@ -84,23 +91,24 @@ body.dark #theme__button:hover {
 }
 body.dark #theme__button:active {
   border-color: #eee;
-  background: #333;
+  background: #222;
   color: #eee;
   box-shadow: 2px 2px 2px #eee;
 }
 
 /* ------------------------- MENU BUTTONS ------------------------- */
 body.light .border-info :hover {
-  border: 1px solid #333;
-  box-shadow: 3px 2px 3px #333;
+  border: 1px solid #222;
+  box-shadow: 3px 2px 3px #222;
 }
 body.light .border-info-none :hover {
+  color: #222;
   border: none;
   box-shadow: none;
 }
 body.light .border-info :active {
-  border: 1px solid #333;
-  box-shadow: 1.5px 1px 1.5px #333;
+  border: 1px solid #222;
+  box-shadow: 1.5px 1px 1.5px #222;
 }
 body.light .border-info-none :active {
   border: none;
@@ -108,17 +116,18 @@ body.light .border-info-none :active {
 }
 /* --- DARK --- */
 body.dark .border-info :hover {
-  border: 1px solid #18cae6;
-  box-shadow: 4px 4px 15px #18cae6;
+  border: 1px solid #33FF33;
+  box-shadow: 4px 4px 15px #33FF33;
 }
 body.dark .border-info-none :hover {
+  color: #33FF33;
   border: none;
   box-shadow: none;
 }
 body.dark .border-info :active {
-  color: #18cae6;
-  border: 1px solid #18cae6;
-  box-shadow: 2px 2px 5px #18cae6;
+  color: #33FF33;
+  border: 1px solid #33FF33;
+  box-shadow: 2px 2px 5px #33FF33;
 }
 body.dark .border-info-none :active {
   border: none;
@@ -131,24 +140,24 @@ body.light .modal-body,
 body.light .modal-footer,
 body.light .modal-header > button > span {
   background-color: #eee !important;
-  color: #333 !important;
+  color: #222 !important;
   border-color: #ddd;
 }
 body.light .modal-dialog {
-  border-color: #333;
+  border-color: #222;
 }
 /* --- DARK --- */
 body.dark .modal-header,
 .modal-body,
 .modal-footer,
 body.dark .modal-header > button > span {
-  background-color: #333 !important;
+  background-color: #222 !important;
   color: #eee;
   border-color: #222;
 }
 body.dark .modal-content {
   border: 1px solid rgba(24, 202, 230, 0.7);
-  /* box-shadow: 0 4px 15px #18cae6; */
+  /* box-shadow: 0 4px 15px #33FF33; */
 }
 
 /* ------------------------- ABOUT MODAL ------------------------- */
@@ -166,24 +175,24 @@ body.light .card {
   margin-top: 10px;
   border-radius: 5px;
   background-color: #eee;
-  color: #333;
-  box-shadow: 0 4px 8px 0 #333;
+  color: #222;
+  box-shadow: 0 4px 8px 0 #222;
   transition: 0.3s;
 }
 body.light .card:hover {
-  box-shadow: 0 4px 16px 0 #333;
+  box-shadow: 0 4px 16px 0 #222;
 }
 body.dark .card {
   margin-top: 10px;
   border-radius: 5px;
-  border-color: #18cae6;
-  background-color: #333;
+  border-color: #33FF33;
+  background-color: #222;
   color: #eee;
   box-shadow: 0 4px 8px 0 #444;
   transition: 0.3s;
 }
 body.dark .card:hover {
-  /* box-shadow: 0 4px 16px 0 #18cae6; */
+  /* box-shadow: 0 4px 16px 0 #33FF33; */
 }
 
 .card-header {
@@ -214,34 +223,29 @@ body.dark .card:hover {
 }
 
 body.dark code {
-  background-color: #222;
+  background-color: #111;
 }
 body.light code {
   background-color: #ddd;
 }
 
 #a-tag-menu {
-  text-decoration: none !important;
-  padding: 5px 50px;
-  border-radius: 25px 0px;
-  font-size: 25px;
+  text-decoration: none;
 }
 body.dark a {
   color: #ddd;
 }
 body.dark a:hover {
-  /* opacity: 0.75; */
-  /* color: #333; */
-  /* background-color: #eee; */
+  color: #33FF33;
 }
 
 body.light a {
-  color: #333;
+  color: #222;
 }
 body.light a:hover {
   /* opacity: 0.75; */
   /* color: #eee; */
-  /* background-color: #333; */
+  /* background-color: #222; */
 }
 
 #theme__button {
@@ -260,13 +264,23 @@ body.light a:hover {
 
 .profile__picture {
   border-radius: 100%;
-  width: 30%;
-  max-width: 207px;
+  width: 50%;
+  max-width: 250px;
 }
 
 .profile__name {
   margin: 0;
+  font-size: 40px;
   text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.profile__title {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  color: #999999;
+  letter-spacing: 1px;
 }
 
 .console__wrapper {
@@ -284,7 +298,7 @@ body.light a:hover {
   max-height: 75vh;
   overflow-y: scroll;
   text-align: center;
-  background: #333;
+  background: #222;
 }
 
 #modal-footer-bordertop-none {

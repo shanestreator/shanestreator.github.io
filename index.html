@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shane</title>
+    <title>Shane Streator</title>
     <link rel="icon" href="assets/images/me.jpg">
     <link rel="stylesheet" href="assets/css/main.css">
-
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -21,431 +20,46 @@
     crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/css/social-media.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
 </head>
 
 <body>
-    <main>
-          <div style="position:fixed;bottom:0px;left:0px;z-index:999;">
-            <div class="icon-pack2 pb-0" >
+    <main class='vh-100'>
+          <div class="social_buttons_center">
+            <div class="icon-pack2" >
                 <ul class="pl-2 mb-2">
                     <li><a href="https://github.com/shanestreator" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                     </li>
                     <li><a href="https://www.linkedin.com/in/shanestreator" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-                    <li><a id="theme__onClick" target="_blank"><i class="fas fa-palette" aria-hidden="true"></i></a>
-                    </li>
                 </ul>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col col-12 mt-3">
-                    <img class="mx-auto d-block profile__picture" src="assets/images/me.jpg" alt="Shane Streator" />
+        <div class="container vh-100 d-flex justify-content-center align-items-start pt-5">
+            <div class="row w-100">
+                <div class="col col-12 mt-3 d-flex justify-content-center">
+                        <img id="theme__onClick" class="profile__picture" src="assets/images/me.jpg" alt="Shane Streator" />
                 </div>
                 <div class="col col-12 mt-3">
-                    <h1 class="profile__name" style="font-size: 36px;">Shane Streator</h1>
-                    <p class="profile__name">Full-Stack Developer</p>
-                    </br>
-                    <div class="console__wrapper">
-                        <code id="console" class="pl-2"> > <span id="dynamic-desc"></span><span id="cursor" class="mr-1" style="opacity: 1">|</span></code>
+                    <div >
+                        <h1 class="profile__name">Shane Streator</h1>
                     </div>
-                </div>
-            </div>
-            <hr width="80%" />
-            <div class="row mb-5">
-                <div style="text-align:center;" class="col-12 mt-3 body-dark border-info">
-                    <a id="a-tag-menu" class="border-info-none" class="border-info-none" href="#about" data-toggle="modal" data-target="#about">
-                        <i class="fas fa-user-circle"></i>
-                        &nbsp;&nbsp;About me
-                    </a>
-                </div>
-                <div style="text-align:center;" class="col-12 mt-3 border-info">
-                    <a id="a-tag-menu" class="border-info-none" href="#experience" data-toggle="modal" data-target="#experience"><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Experience</a>
-                </div>
-                <div style="text-align:center;" class="col-12 mt-3 border-info">
-                    <a id="a-tag-menu" class="border-info-none" href="#projects" data-toggle="modal" data-target="#projects"><i class="fas fa-project-diagram"></i>&nbsp;&nbsp;Projects</a>
-                </div>
-                <div style="text-align:center;" class="col-12 my-3 border-info">
-                    <a id="a-tag-menu" class="border-info-none" href="#skills" data-toggle="modal" data-target="#skills"><i class="fas fa-glasses"></i>&nbsp;&nbsp;Skills</a>
-                </div>
-                <hr width="20%" />
-                <div style="text-align:center;" class="col-12 mt-3 border-info">
-                    <a id="a-tag-menu" class="border-info-none" href="assets/images/ShaneStreatorResume.pdf" target="_blank"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;CV</a>
-                </div>
-            </div>
+                    <div class="profile__title">
+                        <h2 class="profile__title">Full Stack Developer</h2>
+                    </div>
 
-            <!-- MODALS : START -->
-            <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="aboutLabel" aria-hidden="true">
-                <div class="modal-dialog modal-full" role="document">
-                    <div class="modal-content">
-                            <div class="modal-header d-flex align-items-center">
-                                    <div class="d-flex justify-content-center align-items-center mr-2">
+                    <div class="console__wrapper my-4">
+                        <code id="console" class="p-1"> ><span id="dynamic-desc"></span><span id="cursor" class="" style="opacity: 1">|</span></code>
+                    </div>
 
-                                            <i class="fas fa-user-circle"></i>
+                    <hr class="my-4" width="25%" />
 
-                                    </div>
-                                    <h5 class="modal-title" id="aboutLabel">
-                                        About me
-                                    </h5>
-                                    <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                    >
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                        <div class="modal-body px-sm-5">
-                            <div id="card-no-curser" class="card">
-                                <div class="card-header text-left"
-                                    aria-expanded="false">
-                                    <div class="row align-items-center">
-                                        <p class="m-2">
-                                            <strong>
-                                                Detail-oriented and motivated developer seeking an opportunity.
-                                            </strong>
-                                            <br />
-                                            <br />
-                                            Passionate, tech agnostic, Full-Stack Developer that possess a mindset for high drive, continuous improvement, and dedication to quality work.
-                                            <br />
-                                            <br />
-                                            Additionally I'm very interested in learning new technologies, expanding my knowledge base and strengthening skills I currently have.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card mt-5">
-                                <div class="card-header" data-toggle="collapse" data-target="#principles"
-                                    aria-expanded="false" aria-controls="principles">
-                                    <div class="row py-2 d-flex align-items-around justify-content-center">
-                                        <div class="col-12">
-                                            <h6 class="mb-0 text-center">Principles I believe in, promote and adhere to:</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="principles">
-                                    <div class="card-body">
-                                        <ul class="text-left mb-0">
-                                            <li class="font-italic py-2">"No one rises to low expectations."</li>
-                                            <li class="font-italic py-2">"Know your limits, but never accept them."</li>
-                                            <li class="font-italic py-2">"In the middle of difficulty lies opportunity."</li>
-                                            <li class="font-italic py-2">"Those who say it can`t be done shouldn't interrupt those doing it."</li>
-                                            <li class="font-italic py-2">"You attract people by the qualities you display, you keep them by the qualities you possess."</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div id="modal-footer-bordertop-none" class="modal-footer"></div>
+                    <div class="row d-flex justify-content-center">
+                        <a id="a-tag-menu" class="border-info-none py-1 px-2" href="assets/images/resume.pdf" target="_blank">CV</a>
                     </div>
                 </div>
             </div>
         </div>
-
-            <div
-                class="modal fade"
-                id="experience"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="experienceLabel"
-                aria-hidden="true"
-            >
-                <div class="modal-dialog modal-full" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header d-flex align-items-center">
-                            <div class="d-flex justify-content-center align-items-center mr-2">
-
-                                    <i class="fas fa-briefcase"></i>
-
-                            </div>
-                            <h5 class="modal-title" id="experienceLabel">
-                                Experience
-                            </h5>
-                            <button
-                                type="button"
-                                class="close"
-                                data-dismiss="modal"
-                                aria-label="Close"
-                            >
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body px-sm-5">
-
-                            <div class="card mt-4">
-                                    <div class="card-header" data-toggle="collapse" data-target="#fullstack"
-                                        aria-expanded="false" aria-controls="fullstack">
-                                        <div class="row align-items-center">
-                                            <p class="col mb-0 px-0 experience__company">Fullstack Academy</p>
-                                            <span class="col-2 px-0 text-center experience__date">9/18 - 1/19</span>
-                                            <p class="col mb-0 px-0 experience__title">Software Engineer Student</p>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="fullstack">
-                                        <div class="card-body">
-                                            <div class="pt-2">
-                                                <ul class="text-left">
-                                                    <li class="pb-3"><strong>Front-End:</strong> JavaScript ES6+, React, Redux, HTML5, CSS3, Bootstrap</li>
-                                                    <li class="pb-3"><strong>Back-End:</strong> Node.js, Express, PostgreSQL/Sequelize</li>
-                                                    <li class=""><strong>Workflow:</strong> Pair Programming, GitHub, Git, Slack</li>
-                                                    
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                        </div>
-                        <div id="modal-footer-bordertop-none" class="modal-footer"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="projects" tabindex="-1" role="dialog" aria-labelledby="projectsLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-full text-light" role="document">
-                    <div class="modal-content">
-                            <div class="modal-header d-flex align-items-center">
-                                    <div class="d-flex justify-content-center align-items-center mr-2">
-
-                                            <i class="fas fa-project-diagram"></i>
-
-                                    </div>
-                                    <h5 class="modal-title" id="experienceLabel">
-                                        Projects
-                                    </h5>
-                                    <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                    >
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                        <div class="modal-body px-sm-5">
-
-                                <div class="card mt-4">
-                                        <div class="card-header" data-toggle="collapse" data-target="#blogma"
-                                            aria-expanded="false" aria-controls="blogma">
-                                            <div class="row align-items-center">
-                                                <p class="col mb-0 px-0 experience__company">Blogma</p>
-                                                <span class="col-2 px-0 text-center experience__date">4/19 - present</span>
-                                                <p class="col mb-0 px-0 experience__title">Solo Developer</p>
-                                            </div>
-                                        </div>
-                                        <div class="collapse" id="blogma">
-                                            <div class="card-body">
-                                                <div class="pt-2">
-        
-                                                    <div class="text-left mb-3">
-                                                            A full stack blogging application with user authentication, protected endpoints, CRUD operations for users, posts and commenting capabilities.
-                                                    </div>
-                                                    
-                                                    <ul class="text-left mt-3">
-        
-                                                        <li class="mb-3">Being developed with GraphQL, Prisma, Node.js, React, Apollo, Bootstrap 4, Docker, Heroku with pgAdmin 4.</li>
-
-                                                    </ul>
-        
-                                                    <div class="row mt-2">
-                                                            <div class="col-6">
-                                                                <p class="mb-1">Site:</p>
-                                                                      <h5>Currently Unavailable</h5>
-                                                            </div>
-                
-                                                            <div class="col-6 col-lg-6">
-                                                                <p class="mb-1">Code:</p>
-                                                                      <a target='https://github.com/shanestreator/blogma' href="https://github.com/shanestreator/blogma"><i class="fab fa-github fa-2x"></i></a>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                            <div class="card mt-4">
-                                <div class="card-header" data-toggle="collapse" data-target="#imm-custom"
-                                    aria-expanded="false" aria-controls="imm-custom">
-                                    <div class="row align-items-center">
-                                        <p class="col mb-0 px-0 experience__company">imm-custom</p>
-                                        <span class="col-2 px-0 text-center experience__date">1/19 - 3/19</span>
-                                        <p class="col mb-0 px-0 experience__title">Solo Developer</p>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="imm-custom">
-                                    <div class="card-body">
-                                        <div class="pt-2">
-
-                                            <div class="text-left mb-3">
-                                                    A full stack shopping app selling Impact Motivation Manuals. Admin capabilities allowing for CRUD operations on protected routes.
-                                            </div>
-                                            
-                                            <ul class="text-left mt-3">
-
-                                                <li class="mb-3">Developed with Node.js, Express, React, Redux, MongoDB/Mongoose (MongoDB Atlas) along with ES6+ (MERN stack), Bootstrap 4 and SCSS</li>
-
-                                                <li class="mb-3">Integrations: Stripe (react-stripe-checkout) | PayPal (@paypal/checkout-server-sdk) | Nodemailer</li>
-
-                                                <li class="mb-3">Admin authentication protecting routes/endpoints with JWT (JSON Web Tokens)</li>
-
-                                            </ul>
-
-                                            <div class="row mt-2">
-                                                    <div class="col-6">
-                                                        <p class="mb-1">Site:</p>
-                                                              <a target='https://imm-custom.herokuapp.com/' href="https://imm-custom.herokuapp.com/"><i class="fas fa-globe fa-2x"></i></a>
-                                                    </div>
-        
-                                                    <div class="col-6 col-lg-6">
-                                                        <p class="mb-1">Code:</p>
-                                                              <a target='https://github.com/shanestreator/imm-custom' href="https://github.com/shanestreator/imm-custom"><i class="fab fa-github fa-2x"></i></a>
-                                                    </div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card mt-4">
-                                    <div class="card-header" data-toggle="collapse" data-target="#imm-shopify"
-                                        aria-expanded="false" aria-controls="imm-shopify">
-                                        <div class="row align-items-center">
-                                            <p class="col mb-0 px-0 experience__company">imm-shopify</p>
-                                            <span class="col-2 px-0 text-center experience__date">3/19 - present</span>
-                                            <p class="col mb-0 px-0 experience__title">Solo Developer</p>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="imm-shopify">
-                                        <div class="card-body">
-                                            <div class="pt-2">
-    
-                                                <div class="text-left mb-3">
-                                                        A full stack shopping app selling Impact Motivation Manuals integrated with Shopify.
-                                                </div>
-                                                
-                                                <ul class="text-left mt-3">
-    
-                                                    <li class="mb-2">Being developed with Node.js, Express, React, GraphQL, Redux, MongoDB/Mongoose (MongoDB Atlas) along with ES6+, Bootstrap 4 and SCSS</li>
-    
-                                                    <li class="mb-2">Integrations: Shopify (Storefront API & admin/oath access) | Nodemailer</li>
-    
-                                                </ul>
-
-                                                <div>
-                                                    <h5 class="mb-0 mt-2">Currently Private Repo</h5>
-                                                </div>
-    
-                                                <!-- <div class="row">
-                                                        <div class="col-6">
-                                                            <p class="mb-1">Site:</p>
-                                                                  <a target='https://imm-custom.herokuapp.com/' href="https://imm-custom.herokuapp.com/"><i class="fas fa-globe fa-2x"></i></a>
-                                                        </div>
-            
-                                                        <div class="col-6 col-lg-6">
-                                                            <p class="mb-1">Code:</p>
-                                                                  <a target='https://github.com/shanestreator/imm-custom' href="https://github.com/shanestreator/imm-custom"><i class="fab fa-github fa-2x"></i></a>
-                                                        </div>
-                                                    </div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card mt-4">
-                                        <div class="card-header" data-toggle="collapse" data-target="#spacex"
-                                            aria-expanded="false" aria-controls="spacex">
-                                            <div class="row align-items-center">
-                                                <p class="col mb-0 px-0 experience__company">SpaceX GraphQL</p>
-                                                <span class="col-2 px-0 text-center experience__date">3/19</span>
-                                                <p class="col mb-0 px-0 experience__title">Code Along</p>
-                                            </div>
-                                        </div>
-                                        <div class="collapse" id="spacex">
-                                            <div class="card-body">
-                                                <div class="pt-2">
-        
-                                                    <div class="text-left mb-3">
-                                                        Small app using GraphQL, Node.js, Express, React & Apollo.
-                                                    </div>
-                                                    
-                                                    <ul class="text-left mt-3">
-        
-                                                        <li class="mb-3">Fetching data via Axios with SpaceX’s Launches and Rockets API</li>
-        
-                                                    </ul>
-        
-                                                    <div class="row mt-2">
-                                                            <div class="col-6">
-                                                                <p class="mb-1">Site:</p>
-                                                                      <a target='https://spacexgraphql.herokuapp.com/' href="https://spacexgraphql.herokuapp.com/"><i class="fas fa-globe fa-2x"></i></a>
-                                                            </div>
-                
-                                                            <div class="col-6 col-lg-6">
-                                                                <p class="mb-1">Code:</p>
-                                                                      <a target='https://github.com/shanestreator/spacex-graphql' href="https://github.com/shanestreator/spacex-graphql"><i class="fab fa-github fa-2x"></i></a>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                        </div>
-                        <div id="modal-footer-bordertop-none" class="modal-footer"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="skills" tabindex="-1" role="dialog" aria-labelledby="skillsLabel" aria-hidden="true">
-                <div class="modal-dialog modal-full" role="document">
-                    <div class="modal-content">
-                            <div class="modal-header d-flex align-items-center">
-                                    <div class="d-flex justify-content-center align-items-center mr-2">
-
-                                            <i class="fas fa-glasses"></i>
-
-                                    </div>
-                                    <h5 class="modal-title" id="experienceLabel">
-                                        Skills
-                                    </h5>
-                                    <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                    >
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                        <div class="modal-body px-sm-5 d-flex justify-content-center">
-                            <table class="table-striped mt-2">
-                                <tbody>
-                                    <tr>
-                                        <td class='px-2' width="100px"><b>Proficient</b></td>
-                                        <td class="p-3">JavaScript | ES6+ | Node.js | React | Redux | Express | Bootstrap | HTML | CSS</td>
-                                    </tr>
-                                    <tr>
-                                        <td class='px-2' width="100px"><b>Knowledgeable</b></td>
-                                        <td class="p-3">Git | GitHub | Apollo | GraphQL | Prisma | MongoDB | Mongoose | PostgreSQL | Sequelize</td>
-                                    </tr>
-                                    <tr>
-                                        <td class='px-2' width="100px"><b>Some Experience</b></td>
-                                        <td class="p-3">Lighthouse Audit | mLab | MongoDB Atlas | Heroku | Socket.io | pubsub | Mocha/Chai | Jasmine/Enzyme | Docker</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div id="modal-footer-bordertop-none" class="modal-footer"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODALS : END -->
 
         </div>
 
@@ -463,7 +77,7 @@
 
  <script src="assets/js/main.js"></script>
 
- <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+ <!-- <script type="text/javascript" src="assets/js/materialize.min.js"></script> -->
 
 
 </html>

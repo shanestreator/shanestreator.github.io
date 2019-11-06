@@ -43,7 +43,7 @@
       })
     })
 
-    var copyrightText = '© ' + new Date().getFullYear() + ' Nikhil Maheshwari'
+    var copyrightText = '© ' + new Date().getFullYear() + ' Shane Streator'
     $('#copyright-txt').html(copyrightText)
   }) // end of document ready
 })(jQuery) // end of jQuery name space

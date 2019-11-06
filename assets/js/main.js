@@ -4,12 +4,12 @@ $(document).ready(function() {
   var current = 0
   var captionLength = 0
   var captionList = [
-    'Continuous improvement',
-    'Positivity',
-    'Dedication',
-    'Creativity',
+    'Positive',
+    'Creative',
+    'Dedicated',
     'Teamwork',
-    'Lead by example'
+    'Lead by example',
+    'Continuous improvement'
   ]
   // var captionList = [ 'npm i -S Positivity', 'npm i -S Relentless-Drive', 'npm i -S Dedication' ];
   function startTyping() {
@@ -50,7 +50,7 @@ $(document).ready(function() {
         'swing'
       )
   }
-  setInterval(cursorBlink, 600)
+  setInterval(cursorBlink, 800)
   startTyping()
 
   // THEME
