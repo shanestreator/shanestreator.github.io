@@ -7,9 +7,9 @@ $(document).ready(function() {
     'Positive',
     'Creative',
     'Dedicated',
-    'Teamwork',
     'Lead by example',
-    'Continuous improvement'
+    'Continuous improvement',
+    'Teamwork'
   ]
   // var captionList = [ 'npm i -S Positivity', 'npm i -S Relentless-Drive', 'npm i -S Dedication' ];
   function startTyping() {
