@@ -7,7 +7,7 @@ $(document).ready(function() {
     'Positive',
     'Creative',
     'Dedicated',
-    'DRY Principle',
+    'DRY Methodology',
     'Simplicity > Complexity',
     'Continuous Improvement',
     'Teamwork'
