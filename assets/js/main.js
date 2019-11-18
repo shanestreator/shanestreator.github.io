@@ -7,8 +7,9 @@ $(document).ready(function() {
     'Positive',
     'Creative',
     'Dedicated',
-    'Lead by example',
-    'Continuous improvement',
+    'DRY Principle',
+    'Simplicity > Complexity',
+    'Continuous Improvement',
     'Teamwork'
   ]
   // var captionList = [ 'npm i -S Positivity', 'npm i -S Relentless-Drive', 'npm i -S Dedication' ];
